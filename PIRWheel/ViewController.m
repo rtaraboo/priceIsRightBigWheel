@@ -36,6 +36,9 @@
 @property (nonatomic) UIImage *five;
 @property (nonatomic) UIImage *spinSign;
 @property (nonatomic) UIImage *overSign;
+@property (nonatomic) NSURL *winnerURL;
+@property (nonatomic) NSURL *loserURL;
+@property (nonatomic) NSURL *openURL;
 
 
 @end
@@ -46,6 +49,16 @@
     [super viewDidLoad];
     
 //    self.sign = [[UIImageView alloc] init];
+    
+    self.winnerURL = [[NSBundle mainBundle] URLForResource:@"winner" withExtension:@"mp3"];
+    
+    self.loserURL = [[NSBundle mainBundle] URLForResource:@"loser1" withExtension:@"mp3"];
+    
+    self.openURL = [[NSBundle mainBundle] URLForResource:@"pir-opener" withExtension:@"mp3"];
+    
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.openURL error:nil];
+    
+    [self.audioPlayer play];
     
     self.hundredRed = [UIImage imageNamed:@"100red"];
     self.hundredWhite = [UIImage imageNamed:@"100white"];
@@ -71,6 +84,7 @@
     self.spinSign = [UIImage imageNamed:@"spin"];
     self.overSign = [UIImage imageNamed:@"over"];
     
+
     
     
     [self.dollarLabel setHidden:YES];
@@ -80,7 +94,7 @@
     self.numbersArray = [NSMutableArray arrayWithObjects:[UIImage imageNamed:@"wheel1"], [UIImage imageNamed:@"wheel2"],[UIImage imageNamed:@"wheel3"],[UIImage imageNamed:@"wheel4"],[UIImage imageNamed:@"wheel5"],[UIImage imageNamed:@"wheel6"],[UIImage imageNamed:@"wheel7"],[UIImage imageNamed:@"wheel8"],[UIImage imageNamed:@"wheel9"],[UIImage imageNamed:@"wheel10"],[UIImage imageNamed:@"wheel11"],[UIImage imageNamed:@"wheel12"],[UIImage imageNamed:@"wheel13"],[UIImage imageNamed:@"wheel14"],[UIImage imageNamed:@"wheel15"],[UIImage imageNamed:@"wheel16"],[UIImage imageNamed:@"wheel17"], [UIImage imageNamed:@"wheel18"], [UIImage imageNamed:@"wheel19"], [UIImage imageNamed:@"wheel20"], nil];
     
 //    THIS IS WHAT WE WILL USE TO STOP USER INTERACTION
-//  [self.pirWheelPicker setUserInteractionEnabled:NO];
+  [self.pirWheelPicker setUserInteractionEnabled:YES];
 //  [self.pirWheelPicker setAlpha:.8];
     
     [self.pirWheelPicker selectRow:5001 inComponent:0 animated:YES];
@@ -135,6 +149,10 @@
             
         case 0:
             self.dollarLabel.text = @"100";
+            
+            self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.winnerURL error:nil];
+            [self.audioPlayer play];
+            
             [self.sign setImage:self.hundredWhite];
             break;
         case 1:
@@ -159,6 +177,8 @@
             break;
         case 6:
             [self.sign setImage:self.ten];
+            self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.loserURL error:nil];
+            [self.audioPlayer play];
             self.dollarLabel.text = @"010";
             break;
         case 7:
@@ -219,5 +239,8 @@
     }
     
 }
+
+
+
 
 @end

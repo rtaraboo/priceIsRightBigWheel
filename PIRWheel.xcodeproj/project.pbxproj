@@ -16,6 +16,10 @@
 		732477041C889BE800CF03E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732477021C889BE800CF03E0 /* LaunchScreen.storyboard */; };
 		7324770F1C889BE800CF03E0 /* PIRWheelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7324770E1C889BE800CF03E0 /* PIRWheelTests.m */; };
 		7324771A1C889BE800CF03E0 /* PIRWheelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 732477191C889BE800CF03E0 /* PIRWheelUITests.m */; };
+		732477711C89E75A00CF03E0 /* winner.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7324776F1C89E75A00CF03E0 /* winner.mp3 */; };
+		732477721C89E75A00CF03E0 /* loser.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 732477701C89E75A00CF03E0 /* loser.mp3 */; };
+		732477741C8A097900CF03E0 /* pir-opener.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 732477731C8A097900CF03E0 /* pir-opener.mp3 */; };
+		732477761C8A099400CF03E0 /* loser1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 732477751C8A099400CF03E0 /* loser1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		732477151C889BE800CF03E0 /* PIRWheelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIRWheelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		732477191C889BE800CF03E0 /* PIRWheelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIRWheelUITests.m; sourceTree = "<group>"; };
 		7324771B1C889BE800CF03E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7324776F1C89E75A00CF03E0 /* winner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = winner.mp3; sourceTree = "<group>"; };
+		732477701C89E75A00CF03E0 /* loser.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loser.mp3; sourceTree = "<group>"; };
+		732477731C8A097900CF03E0 /* pir-opener.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pir-opener.mp3"; sourceTree = "<group>"; };
+		732477751C8A099400CF03E0 /* loser1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loser1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,10 @@
 				732477021C889BE800CF03E0 /* LaunchScreen.storyboard */,
 				732477051C889BE800CF03E0 /* Info.plist */,
 				732476FD1C889BE800CF03E0 /* PIRWheel.xcdatamodeld */,
+				732477751C8A099400CF03E0 /* loser1.mp3 */,
+				7324776F1C89E75A00CF03E0 /* winner.mp3 */,
+				732477731C8A097900CF03E0 /* pir-opener.mp3 */,
+				732477701C89E75A00CF03E0 /* loser.mp3 */,
 				732476F11C889BE800CF03E0 /* Supporting Files */,
 			);
 			path = PIRWheel;
@@ -249,6 +261,10 @@
 				732477041C889BE800CF03E0 /* LaunchScreen.storyboard in Resources */,
 				732477011C889BE800CF03E0 /* Assets.xcassets in Resources */,
 				732476FC1C889BE800CF03E0 /* Main.storyboard in Resources */,
+				732477721C89E75A00CF03E0 /* loser.mp3 in Resources */,
+				732477711C89E75A00CF03E0 /* winner.mp3 in Resources */,
+				732477761C8A099400CF03E0 /* loser1.mp3 in Resources */,
+				732477741C8A097900CF03E0 /* pir-opener.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
