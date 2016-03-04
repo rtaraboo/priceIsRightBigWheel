@@ -502,6 +502,7 @@
 				732477201C889BE800CF03E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		732477211C889BE800CF03E0 /* Build configuration list for PBXNativeTarget "PIRWheelTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +511,7 @@
 				732477231C889BE800CF03E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		732477241C889BE800CF03E0 /* Build configuration list for PBXNativeTarget "PIRWheelUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +520,7 @@
 				732477261C889BE800CF03E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
